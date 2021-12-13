@@ -26,7 +26,7 @@ const AddProductForm = () => {
         const newSpot = { name, description, tagline, image, rating, location, type, applyLink }
 
         //POST 
-        fetch("http://localhost:5000/products", {
+        fetch("https://whispering-retreat-71950.herokuapp.com/products", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -35,7 +35,7 @@ const AddProductForm = () => {
         }).then((res) => res.json())
             .then(data => {
                 if (data.acknowledged) {
-                    swal("Spot Added!", "Job Vacance  added to the database!", "success");
+                    swal("Job Added!", "Job Vacance  added to the database!", "success");
                     history.push('/');
                 } else {
                     swal("Unsuccessful !", "Job Vacance  not added to the database!", "error");

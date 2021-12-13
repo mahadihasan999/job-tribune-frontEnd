@@ -24,7 +24,7 @@ const Products = () => {
 
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 mt-12">
-                {products?.slice(0, 8).map(item => (
+                {products.map(item => (
                     loading ? <Spinner key={item._id} /> : <SpotItem key={item._id} {...item} />
                 ))}
             </div>

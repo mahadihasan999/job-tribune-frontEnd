@@ -5,7 +5,7 @@ const AboutItem = ({ id, image, star, name, location }) => {
         <div className="bg-white transform transition duration-700 hover:scale-105 p-6 rounded-2xl hover:shadow-xl">
             {/* image  */}
             <div className="overflow-hidden rounded-2xl ">
-                <image className="transform transition duration-700 hover:scale-125" src={image} alt="" />
+                <img className="transform transition duration-700 hover:scale-125" src={image} alt="" />
             </div>
             {/* other info  */}
             <div className="flex mt-6 space-x-3 ">

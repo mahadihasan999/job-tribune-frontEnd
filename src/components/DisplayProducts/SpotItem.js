@@ -10,13 +10,13 @@ const SpotItem = ({ image, tagline, name, type, location, rating }) => {
         history.push(`/products/${name}`);
     }
     return (
-        <div className="bg-white border border-gray-200 transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
+        <div className="bg-white border border-gray-300 transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
             <span className="text-primary text-2xl poppins py-1 inline-block ">{name}</span>
-            <div className='flex flex-row justify-between'>
-                <div>
-                    <img className="w-50 h-50" src={image} alt="" />
-                    < ProgressBar completed={60} className='my-3' />
-                </div>
+            <div className='flex flex-row'>
+
+                <img src={image} alt="" className="w-64 mx-auto transform transition duration-300 hover:scale-105 h-45" alt="" />
+
+
                 <div className="space-y-2 px-3">
                     <div className='flex flex-row justify-between'>
                         <h2 className="text-gray-900 poppins text-1xl font-bold">{location}</h2>
